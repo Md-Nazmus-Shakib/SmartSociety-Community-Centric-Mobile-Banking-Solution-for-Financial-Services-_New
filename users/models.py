@@ -11,7 +11,7 @@ USER_ROLES = (
 
 class User(AbstractUser):
     username = models.CharField(max_length=150, unique=False, blank=True, null=True)
-    email = models.EmailField(unique=True)
+    email = models.EmailField(unique=False)
     # authenticate by account_number instead of username
     USERNAME_FIELD = 'account_number'
     role = models.CharField(max_length=20, choices=USER_ROLES, blank=True, null=True)

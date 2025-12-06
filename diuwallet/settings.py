@@ -44,12 +44,17 @@ INSTALLED_APPS = [
     'rest_framework',
     'users',
     'wallet',
+    'agent',
+    'merchant',
+    'panel_admin',
     # 'customer',
     'transactions',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'customer.apps.CustomerConfig',
     'django_apscheduler',
+    'corsheaders',
+    
     
     
     
@@ -64,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 REST_FRAMEWORK = {
@@ -71,10 +77,12 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
-    
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
 }
-
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'diuwallet.urls'
 
 TEMPLATES = [
@@ -146,6 +154,7 @@ SIMPLE_JWT = {
     "ROTATE_REFRESH_TOKENS": True,
     'BLACKLIST_AFTER_ROTATION': True,
     'USER_ID_FIELD': 'account_number',
+    
     'USER_ID_CLAIM': 'account_number',  # or 'account_number'account number k primary key hisahbe use korchi tai ,karin default vabe jwt id k pk dhore ney . 
     
     }

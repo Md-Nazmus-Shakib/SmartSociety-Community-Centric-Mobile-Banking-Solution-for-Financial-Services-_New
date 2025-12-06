@@ -6,7 +6,7 @@ def auto_task():
     
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(auto_task, 'interval', seconds=3)
+    scheduler.add_job(auto_task, 'interval', seconds=1500)
     register_events(scheduler)
     scheduler.start()
     

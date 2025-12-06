@@ -7,6 +7,8 @@ from rest_framework import status
 from . import models
 from wallet import models as wallet_models
 from customer import models as customer_models
+from merchant import models as merchant_models
+from agent import models as agent_models
 from . import serializers
 from rest_framework.decorators import api_view,permission_classes,authentication_classes
 from rest_framework.permissions import IsAuthenticated
@@ -38,6 +40,10 @@ def  user_registration_view(request):
                 wallet_models.Wallet.objects.create(user=serializer.instance)
             if serializer.data.get('role') == 'customer':
                 customer_models.Customer.objects.create(user=serializer.instance)
+            elif serializer.data.get('role') == 'merchant':
+                merchant_models.Merchant.objects.create(user=serializer.instance)
+            elif serializer.data.get('role') == 'agent':
+                agent_models.Agent.objects.create(user=serializer.instance)
             security_logger.info(f"Account created successfully for account number: {serializer.data.get('account_number')}")  
             return Response(
                 {
@@ -50,7 +56,7 @@ def  user_registration_view(request):
 @api_view(['POST'])    
 def user_login_view(request):
     if request.method == 'POST':
-        account_number = request.data.get('account_number')
+        account_number = request.data.get('account_number') 
         password = request.data.get('password')
         try:
             user = models.User.objects.get(account_number=account_number)
@@ -66,11 +72,11 @@ def user_login_view(request):
             return Response({'error': 'User does not exist'}, status=status.HTTP_404_NOT_FOUND)
         
 
-# @api_view(['GET'])
-# @permission_classes([IsAuthenticated])
-# def user_profile_view(request):
-#         serializer = serializers.UserSerializer(request.user)
-#         return Response(serializer.data, status=status.HTTP_200_OK)
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def user_profile_view(request):
+        serializer = serializers.UserSerializer(request.user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
             
         
 @api_view(['GET', 'PUT', 'PATCH', 'DELETE'])

@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from . import models
 from wallet import models as wallet_models
-from transactions.services import send_money_service
+from transactions.services import send_money_service, cash_out_service ,payment_service,transaction_history_service
 from . import serializers
 from rest_framework.decorators import api_view,permission_classes,authentication_classes
 from rest_framework.permissions import IsAuthenticated
@@ -24,15 +24,38 @@ def customer_profile_view(request):
 @permission_classes([IsAuthenticated])
 def send_money_view(request):
     if request.method == 'POST':
+        
         sender_ac_no = request.user.account_number
         reciver_ac_no = request.data.get('reciver_ac_no')
         amount = request.data.get('amount') 
-        service_response = send_money_service(sender_ac_no, reciver_ac_no, amount)
+        password = request.data.get('password')
+        service_response = send_money_service(sender_ac_no, reciver_ac_no, amount, password)
         return Response(service_response,status=service_response.get("status", 200))
     
 
-        
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def cash_out_view(request):
+    if request.method == 'POST':
+        sender_ac_no = request.user.account_number
+        reciver_ac_no = request.data.get('agent_ac_no')
+        amount = request.data.get('amount') 
+        service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+        return Response(service_response,status=service_response.get("status", 200))    
     
-
-    
-        
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def payment_view(request):
+    if request.method == 'POST':
+        sender_ac_no = request.user.account_number
+        reciver_ac_no = request.data.get('merchant_ac_no')
+        amount = request.data.get('amount') 
+        service_response = payment_service(sender_ac_no, reciver_ac_no, amount)
+        return Response(service_response,status=service_response.get("status", 200))    
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def transaction_history_view(request):
+    if request.method == 'GET':
+       user_ac_no = request.user.account_number
+       service_response = transaction_history_service(user_ac_no)
+       return Response(service_response,status=service_response.get("status", 200))
