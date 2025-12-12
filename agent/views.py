@@ -5,6 +5,7 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework import status
 from . import models
+from transactions.models import MoneyRequest
 from wallet import models as wallet_models
 from transactions.services import send_money_service, cash_out_service ,payment_service,transaction_history_service,cashin_service
 from . import serializers
@@ -24,7 +25,7 @@ def agent_profile_view(request):
 def cashin_view(request):
     if request.method == 'POST':
         sender_ac_no = request.user.account_number
-        reciver_ac_no = request.data.get('customer_ac_no')
+        reciver_ac_no = request.data.get('reciver_ac_no')
         amount = request.data.get('amount') 
         service_response = cashin_service(sender_ac_no, reciver_ac_no, amount)
         return Response(service_response,status=service_response.get("status", 200))
@@ -36,3 +37,27 @@ def transaction_history_view(request):
        user_ac_no = request.user.account_number
        service_response = transaction_history_service(user_ac_no)
        return Response(service_response,status=service_response.get("status", 200))
+
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def request_money(request):
+    agent = request.user
+    account_number = agent.account_number
+    amount = request.data.get("amount")
+
+    if not amount:
+        return Response({"error": "Amount is required"}, status=400)
+
+    req = MoneyRequest.objects.create(
+        agent=agent,
+        amount=amount
+    )
+
+    return Response({
+        "success": True,
+        "message": "Money request submitted",
+        "request_id": req.id
+    }, status=201)
+

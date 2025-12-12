@@ -29,11 +29,19 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/users/', include('users.urls')),
     path('api/users/', include('wallet.urls')),
+    path('api/agents/',include('revenue.urls')),
     path('api/customers/', include('customer.urls')),
     path('api/agents/', include('agent.urls')),
     path('api/merchants/', include('merchant.urls')),
-    path('api/admin/', include('panel_admin.urls')),
+    # path('api/products/', include('products.urls')),
+    path('api/panel-admin/', include('panel_admin.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 ]
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

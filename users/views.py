@@ -6,8 +6,10 @@ from rest_framework.response import Response
 from rest_framework import status
 from . import models
 from wallet import models as wallet_models
+from revenue import models as revenue_models
 from customer import models as customer_models
 from merchant import models as merchant_models
+from products import models as product_models
 from agent import models as agent_models
 from . import serializers
 from rest_framework.decorators import api_view,permission_classes,authentication_classes
@@ -38,12 +40,16 @@ def  user_registration_view(request):
             serializer.save()
             if serializer.data.get('role')  in ['customer','merchant','agent']:
                 wallet_models.Wallet.objects.create(user=serializer.instance)
+            
+                
             if serializer.data.get('role') == 'customer':
                 customer_models.Customer.objects.create(user=serializer.instance)
             elif serializer.data.get('role') == 'merchant':
                 merchant_models.Merchant.objects.create(user=serializer.instance)
+                
             elif serializer.data.get('role') == 'agent':
                 agent_models.Agent.objects.create(user=serializer.instance)
+                revenue_models.Revenue.objects.create(user=serializer.instance)
             security_logger.info(f"Account created successfully for account number: {serializer.data.get('account_number')}")  
             return Response(
                 {
@@ -131,5 +137,7 @@ def logout_view(request):
         return Response({"message": "Logout successful"}, status=status.HTTP_200_OK)
     except TokenError as e:
         return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+    
+
         
 # Create your views here.

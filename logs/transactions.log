@@ -1846,3 +1846,2341 @@ users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
 [20] 2025-12-05 03:02:09,646 -- (ERROR)- transactions_logger- [<function lineno at 0x0000025514CADD00>]FAILED Transaction — Reciver is not a valid customer.
 [20] 2025-12-05 03:15:35,201 -- (ERROR)- transactions_logger- [<function lineno at 0x0000025514CADD00>]FAILED Transaction — Reciver is not a valid customer.
 [26] 2025-12-05 03:18:15,850 -- (ERROR)- transactions_logger- [<function lineno at 0x0000025514CADD00>]FAILED Transaction — User Does Not Exist
+[26] 2025-12-09 19:26:59,688 -- (ERROR)- transactions_logger- [<function lineno at 0x000001EA5C7ADC60>]FAILED Transaction — User Does Not Exist
+[26] 2025-12-09 19:32:01,113 -- (ERROR)- transactions_logger- [<function lineno at 0x000001EA5C7ADC60>]FAILED Transaction — User Does Not Exist
+[23] 2025-12-09 19:32:36,264 -- (ERROR)- transactions_logger- [<function lineno at 0x000001EA5C7ADC60>]FAILED Transaction — Invalid Password.
+[17] 2025-12-09 19:33:37,434 -- (ERROR)- transactions_logger- [<function lineno at 0x000001EA5C7ADC60>]FAILED Transaction — Sender and Receiver cannot be the same.
+[20] 2025-12-09 19:44:32,288 -- (ERROR)- transactions_logger- [<function lineno at 0x000001EA5C7ADC60>]FAILED Transaction — Reciver is not a valid customer.
+[30] 2025-12-09 19:54:02,680 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Insufficient Balance
+[30] 2025-12-09 19:54:10,988 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Insufficient Balance
+[23] 2025-12-09 19:55:05,561 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Invalid Password.
+[23] 2025-12-09 19:55:11,692 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Invalid Password.
+[23] 2025-12-09 19:55:46,841 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Invalid Password.
+[23] 2025-12-09 19:58:08,979 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Invalid Password.
+[30] 2025-12-09 19:58:18,241 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Insufficient Balance
+[30] 2025-12-09 19:59:03,250 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Insufficient Balance
+[30] 2025-12-09 19:59:29,691 -- (ERROR)- transactions_logger- [<function lineno at 0x000001BE8002DD00>]FAILED Transaction — Insufficient Balance
+[147] 2025-12-09 20:08:42,209 -- (ERROR)- transactions_logger- [<function lineno at 0x0000020E0BD1DC60>]FAILED Transaction — Insufficient Balance
+[138] 2025-12-09 20:09:23,655 -- (ERROR)- transactions_logger- [<function lineno at 0x0000020E0BD1DC60>]FAILED Transaction — Reciver is not a valid agent.
+[201] 2025-12-09 20:19:26,726 -- (ERROR)- transactions_logger- [<function lineno at 0x000001E77364DBC0>]FAILED Transaction — Insufficient Balance
+[30] 2025-12-09 20:28:20,589 -- (ERROR)- transactions_logger- [<function lineno at 0x000002C68578DBC0>]FAILED Transaction — Insufficient Balance
+[201] 2025-12-09 20:30:11,962 -- (ERROR)- transactions_logger- [<function lineno at 0x000002C68578DBC0>]FAILED Transaction — Insufficient Balance
+[147] 2025-12-09 20:49:55,361 -- (ERROR)- transactions_logger- [<function lineno at 0x000001FDB84EDBC0>]FAILED Transaction — Insufficient Balance
+[17] 2025-12-09 21:03:11,314 -- (ERROR)- transactions_logger- [<function lineno at 0x000001FDB84EDBC0>]FAILED Transaction — Sender and Receiver cannot be the same.
+[30] 2025-12-09 21:03:35,176 -- (ERROR)- transactions_logger- [<function lineno at 0x000001FDB84EDBC0>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-10 00:26:30,410 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:26:30,435 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:26:31,641 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:26:31,642 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:26:32,205 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:26:32,208 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:26:32,724 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:26:32,727 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:27:40,132 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:27:40,135 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:27:40,772 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:27:40,775 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:27:40,969 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:27:40,971 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:27:41,179 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:27:41,182 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:27:41,652 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:27:41,655 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:27:41,877 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:27:41,879 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 111833
+[253] 2025-12-10 00:29:26,408 -- (ERROR)- django.request- Internal Server Error: /api/merchants/cashout/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 30, in cashout_view
+    service_response = cash_out_service(sender_ac_no, reciver_ac_no, amount)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cash_out_service() missing 1 required positional argument: 'password'
+[213] 2025-12-10 00:29:26,410 -- (ERROR)- django.server- "POST /api/merchants/cashout/ HTTP/1.1" 500 112156
+[145] 2025-12-10 00:30:27,633 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[147] 2025-12-10 00:30:48,454 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — Insufficient Balance
+[145] 2025-12-10 00:31:17,360 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[145] 2025-12-10 00:31:48,559 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[145] 2025-12-10 00:32:05,654 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[147] 2025-12-10 00:35:10,406 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-10 01:14:16,030 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 01:14:16,158 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[253] 2025-12-10 01:20:06,094 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 01:20:06,097 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[253] 2025-12-10 01:20:06,191 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 01:20:06,195 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[253] 2025-12-10 01:20:08,232 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 01:20:08,244 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[253] 2025-12-10 01:20:08,448 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 01:20:08,451 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[253] 2025-12-10 02:04:02,395 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 02:04:02,400 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[253] 2025-12-10 02:04:02,510 -- (ERROR)- django.request- Internal Server Error: /api/customers/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 20, in customer_profile_view
+    serializer = serializers.CustomerSerializer(request.user.customer)
+                                                ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.customer.RelatedObjectDoesNotExist: User has no customer.
+[213] 2025-12-10 02:04:02,515 -- (ERROR)- django.server- "GET /api/customers/profile/ HTTP/1.1" 500 115465
+[85] 2025-12-10 02:20:13,190 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:20:43,845 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:28:45,552 -- (ERROR)- transactions_logger- [<function lineno at 0x0000026367B7DBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:31:40,341 -- (ERROR)- transactions_logger- [<function lineno at 0x00000266130EDBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:31:43,248 -- (ERROR)- transactions_logger- [<function lineno at 0x00000266130EDBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:35:30,460 -- (ERROR)- transactions_logger- [<function lineno at 0x00000191DCF4DBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:38:46,749 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024495CDDBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:39:50,250 -- (ERROR)- transactions_logger- [<function lineno at 0x000002965D2FDBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:50:09,895 -- (ERROR)- transactions_logger- [<function lineno at 0x000002965D2FDBC0>]FAILED Transaction — User Does Not Exist
+[85] 2025-12-10 02:50:16,632 -- (ERROR)- transactions_logger- [<function lineno at 0x000002965D2FDBC0>]FAILED Transaction — User Does Not Exist
+[88] 2025-12-10 02:54:43,221 -- (ERROR)- transactions_logger- [<function lineno at 0x0000019E1B15DBC0>]FAILED Transaction — Insufficient Balance
+[88] 2025-12-10 02:54:55,330 -- (ERROR)- transactions_logger- [<function lineno at 0x0000019E1B15DBC0>]FAILED Transaction — Insufficient Balance
+[88] 2025-12-10 02:55:28,406 -- (ERROR)- transactions_logger- [<function lineno at 0x0000019E1B15DBC0>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-10 10:44:35,414 -- (ERROR)- django.request- Internal Server Error: /api/agents/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\agent\views.py", line 20, in agent_profile_view
+    serializer = serializers.AgentSerializer(request.user.agent)
+                                             ^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.agent.RelatedObjectDoesNotExist: User has no agent.
+[213] 2025-12-10 10:44:35,429 -- (ERROR)- django.server- "GET /api/agents/profile/ HTTP/1.1" 500 114571
+[253] 2025-12-10 10:45:15,165 -- (ERROR)- django.request- Internal Server Error: /api/agents/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\agent\views.py", line 20, in agent_profile_view
+    serializer = serializers.AgentSerializer(request.user.agent)
+                                             ^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.agent.RelatedObjectDoesNotExist: User has no agent.
+[213] 2025-12-10 10:45:15,168 -- (ERROR)- django.server- "GET /api/agents/profile/ HTTP/1.1" 500 114571
+[30] 2025-12-11 09:59:29,814 -- (ERROR)- transactions_logger- [<function lineno at 0x0000017AD3D9DD00>]FAILED Transaction — Insufficient Balance
+[140] 2025-12-11 10:09:19,351 -- (ERROR)- transactions_logger- [<function lineno at 0x0000020220D0DD00>]FAILED Transaction — Invalid Password.
+[146] 2025-12-11 10:09:24,190 -- (ERROR)- transactions_logger- [<function lineno at 0x0000020220D0DD00>]FAILED Transaction — Insufficient Balance
+[30] 2025-12-11 10:40:19,008 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B37F0FDD00>]FAILED Transaction — Insufficient Balance
+[146] 2025-12-11 11:16:29,370 -- (ERROR)- transactions_logger- [<function lineno at 0x000001DF65A5DD00>]FAILED Transaction — Insufficient Balance
+[146] 2025-12-11 11:21:27,268 -- (ERROR)- transactions_logger- [<function lineno at 0x000001DF65A5DD00>]FAILED Transaction — Insufficient Balance
+[146] 2025-12-11 12:33:29,255 -- (ERROR)- transactions_logger- [<function lineno at 0x000001DF65A5DD00>]FAILED Transaction — Insufficient Balance
+[146] 2025-12-11 12:33:31,062 -- (ERROR)- transactions_logger- [<function lineno at 0x000001DF65A5DD00>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-11 19:47:06,029 -- (ERROR)- django.request- Internal Server Error: /api/panel-admin/transactions/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\panel_admin\views.py", line 51, in transaction_history_view
+    for trx in trx_list:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+[253] 2025-12-11 19:47:06,029 -- (ERROR)- django.request- Internal Server Error: /api/customers/transaction/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 62, in transaction_history_view
+    service_response = transaction_history_service(user_ac_no)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\transactions\services.py", line 255, in transaction_history_service
+    for trx in trx_history:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+[213] 2025-12-11 19:47:06,064 -- (ERROR)- django.server- "GET /api/panel-admin/transactions/ HTTP/1.1" 500 170788
+[213] 2025-12-11 19:47:06,081 -- (ERROR)- django.server- "GET /api/customers/transaction/ HTTP/1.1" 500 175307
+[253] 2025-12-11 19:48:05,224 -- (ERROR)- django.request- Internal Server Error: /api/customers/transaction/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 62, in transaction_history_view
+    service_response = transaction_history_service(user_ac_no)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\transactions\services.py", line 255, in transaction_history_service
+    for trx in trx_history:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+[213] 2025-12-11 19:48:05,229 -- (ERROR)- django.server- "GET /api/customers/transaction/ HTTP/1.1" 500 175307
+[253] 2025-12-11 19:48:05,326 -- (ERROR)- django.request- Internal Server Error: /api/panel-admin/transactions/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\panel_admin\views.py", line 51, in transaction_history_view
+    for trx in trx_list:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column transactions_transaction.fee_amount does not exist
+LINE 1: ..._wallet_id", "transactions_transaction"."amount", "transacti...
+                                                             ^
+
+[213] 2025-12-11 19:48:05,331 -- (ERROR)- django.server- "GET /api/panel-admin/transactions/ HTTP/1.1" 500 170788
+[253] 2025-12-11 19:54:43,981 -- (ERROR)- django.request- Internal Server Error: /api/agents/revenue/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\revenue\views.py", line 13, in get_revenue
+    revenue = models.Revenue.objects.get(user=request.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+revenue.models.Revenue.DoesNotExist: Revenue matching query does not exist.
+[213] 2025-12-11 19:54:44,008 -- (ERROR)- django.server- "GET /api/agents/revenue/ HTTP/1.1" 500 118885
+[253] 2025-12-11 19:55:33,876 -- (ERROR)- django.request- Internal Server Error: /api/agents/revenue/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\revenue\views.py", line 13, in get_revenue
+    revenue = models.Revenue.objects.get(user=request.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+revenue.models.Revenue.DoesNotExist: Revenue matching query does not exist.
+[213] 2025-12-11 19:55:33,919 -- (ERROR)- django.server- "GET /api/agents/revenue/ HTTP/1.1" 500 118885
+[253] 2025-12-11 19:59:17,131 -- (ERROR)- django.request- Internal Server Error: /api/agents/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\agent\views.py", line 20, in agent_profile_view
+    serializer = serializers.AgentSerializer(request.user.agent)
+                                             ^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.agent.RelatedObjectDoesNotExist: User has no agent.
+[213] 2025-12-11 19:59:17,140 -- (ERROR)- django.server- "GET /api/agents/profile/ HTTP/1.1" 500 115687
+[253] 2025-12-11 19:59:17,281 -- (ERROR)- django.request- Internal Server Error: /api/agents/profile/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\agent\views.py", line 20, in agent_profile_view
+    serializer = serializers.AgentSerializer(request.user.agent)
+                                             ^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.User.agent.RelatedObjectDoesNotExist: User has no agent.
+[213] 2025-12-11 19:59:17,310 -- (ERROR)- django.server- "GET /api/agents/profile/ HTTP/1.1" 500 115687
+[146] 2025-12-11 19:59:45,913 -- (ERROR)- transactions_logger- [<function lineno at 0x000001C8FCA26480>]FAILED Transaction — Insufficient Balance
+[146] 2025-12-11 20:11:57,803 -- (ERROR)- transactions_logger- [<function lineno at 0x000001C8FCA26480>]FAILED Transaction — Insufficient Balance
+[146] 2025-12-12 00:11:49,114 -- (ERROR)- transactions_logger- [<function lineno at 0x000001C9BCCE6480>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-12 00:12:37,907 -- (ERROR)- django.request- Internal Server Error: /api/agents/revenue/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\revenue\views.py", line 13, in get_revenue
+    revenue = models.Revenue.objects.get(user=request.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+revenue.models.Revenue.DoesNotExist: Revenue matching query does not exist.
+[213] 2025-12-12 00:12:37,920 -- (ERROR)- django.server- "GET /api/agents/revenue/ HTTP/1.1" 500 119725
+[146] 2025-12-12 00:16:05,273 -- (ERROR)- transactions_logger- [<function lineno at 0x000001C9BCCE6480>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-12 02:15:05,502 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: AmarFood - M180578>": "Product.merchant" must be a "Merchant" instance.
+[213] 2025-12-12 02:15:05,571 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 132111
+[253] 2025-12-12 02:15:31,496 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: AmarFood - M982606>": "Product.merchant" must be a "Merchant" instance.
+[213] 2025-12-12 02:15:31,500 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 132111
+[253] 2025-12-12 02:17:46,369 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: AmarFood - M660642>": "Product.merchant" must be a "Merchant" instance.
+[213] 2025-12-12 02:17:46,393 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 132111
+[253] 2025-12-12 02:20:47,197 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: amafarm - M745127>": "Product.merchant" must be a "Merchant" instance.
+[213] 2025-12-12 02:20:47,200 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 132316
+[253] 2025-12-12 02:23:01,995 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "product_price" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (1, , null, null, , M165399).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "product_price" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (1, , null, null, , M165399).
+
+[213] 2025-12-12 02:23:02,157 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 195794
+[253] 2025-12-12 02:24:42,159 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "product_price" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (2, , null, null, , M361713).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "product_price" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (2, , null, null, , M361713).
+
+[213] 2025-12-12 02:24:42,263 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 195794
+[253] 2025-12-12 02:26:16,230 -- (ERROR)- django.request- Internal Server Error: /api/users/registration/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "product_quntity" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (3, , 0.00, null, , M859608).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\users\views.py", line 49, in user_registration_view
+    product_models.Product.objects.create(merchant=serializer.instance)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "product_quntity" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (3, , 0.00, null, , M859608).
+
+[213] 2025-12-12 02:26:16,326 -- (ERROR)- django.server- "POST /api/users/registration/ HTTP/1.1" 500 195940
+[253] 2025-12-12 02:27:48,814 -- (ERROR)- django.request- Internal Server Error: /admin/products/product/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Product has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\options.py", line 1031, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "G:\E_Transaction\diuwallet\products\models.py", line 12, in __str__
+    return f"{self.product_name} - {self.merchant.user.username}"
+                                    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'user'
+[213] 2025-12-12 02:27:48,823 -- (ERROR)- django.server- "GET /admin/products/product/ HTTP/1.1" 500 407463
+[253] 2025-12-12 02:28:13,500 -- (ERROR)- django.request- Internal Server Error: /admin/products/product/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Product has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\contrib\admin\options.py", line 1031, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "G:\E_Transaction\diuwallet\products\models.py", line 12, in __str__
+    return f"{self.product_name} - {self.merchant.user.username}"
+                                    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'user'
+[213] 2025-12-12 02:28:13,536 -- (ERROR)- django.server- "GET /admin/products/product/ HTTP/1.1" 500 407470
+[253] 2025-12-12 02:30:29,017 -- (ERROR)- django.request- Internal Server Error: /api/merchants/products/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 57, in list_products_view
+    products = models.Product.objects.filter(merchant=merchant)
+               ^^^^^^^^^^^^^^
+AttributeError: module 'merchant.models' has no attribute 'Product'
+[213] 2025-12-12 02:30:29,033 -- (ERROR)- django.server- "GET /api/merchants/products/ HTTP/1.1" 500 110417
+[253] 2025-12-12 02:35:17,386 -- (ERROR)- django.request- Internal Server Error: /api/merchants/products/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 59, in list_products_view
+    products = product_models.objects.filter(merchant=merchant)
+               ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'products.models' has no attribute 'objects'
+[213] 2025-12-12 02:35:17,511 -- (ERROR)- django.server- "GET /api/merchants/products/ HTTP/1.1" 500 110423
+[253] 2025-12-12 02:36:01,798 -- (ERROR)- django.request- Internal Server Error: /api/merchants/products/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 59, in list_products_view
+    products = Product.objects.filter(merchant=merchant)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\query.py", line 1563, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\query.py", line 1372, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\db\models\sql\query.py", line 1349, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "amafarm - M112469": Must be "User" instance.
+[213] 2025-12-12 02:36:01,806 -- (ERROR)- django.server- "GET /api/merchants/products/ HTTP/1.1" 500 155473
+[253] 2025-12-12 02:38:33,434 -- (ERROR)- django.request- Internal Server Error: /api/merchants/products/
+Traceback (most recent call last):
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\djangoRESTapi\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\merchant\views.py", line 60, in list_products_view
+    serializer = product_serializers(products, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[213] 2025-12-12 02:38:33,477 -- (ERROR)- django.server- "GET /api/merchants/products/ HTTP/1.1" 500 110275
+[253] 2025-12-12 13:02:28,834 -- (ERROR)- django.request- Internal Server Error: /admin/products/product/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Product has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\contrib\admin\options.py", line 1031, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "G:\E_Transaction\diuwallet\products\models.py", line 12, in __str__
+    return f"{self.product_name} - {self.merchant.user.username}"
+                                    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'user'
+[213] 2025-12-12 13:02:28,872 -- (ERROR)- django.server- "GET /admin/products/product/ HTTP/1.1" 500 407510
+[146] 2025-12-12 18:32:46,852 -- (ERROR)- transactions_logger- [<function lineno at 0x00000223640977E0>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-12 18:50:50,887 -- (ERROR)- django.request- Internal Server Error: /api/customers/viewproducts/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 71, in view_products_view
+    serializer = serializers.ProductSerializer(products, many=True, context={'request': request})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'customer.serializers' has no attribute 'ProductSerializer'
+[213] 2025-12-12 18:50:50,918 -- (ERROR)- django.server- "GET /api/customers/viewproducts/ HTTP/1.1" 500 111376
+[253] 2025-12-12 18:50:51,121 -- (ERROR)- django.request- Internal Server Error: /api/customers/viewproducts/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 71, in view_products_view
+    serializer = serializers.ProductSerializer(products, many=True, context={'request': request})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'customer.serializers' has no attribute 'ProductSerializer'
+[213] 2025-12-12 18:50:51,125 -- (ERROR)- django.server- "GET /api/customers/viewproducts/ HTTP/1.1" 500 111376
+[253] 2025-12-12 18:51:09,815 -- (ERROR)- django.request- Internal Server Error: /api/customers/viewproducts/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 71, in view_products_view
+    serializer = serializers.ProductSerializer(products, many=True, context={'request': request})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'customer.serializers' has no attribute 'ProductSerializer'
+[213] 2025-12-12 18:51:09,815 -- (ERROR)- django.server- "GET /api/customers/viewproducts/ HTTP/1.1" 500 111376
+[253] 2025-12-12 18:51:10,005 -- (ERROR)- django.request- Internal Server Error: /api/customers/viewproducts/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\customer\views.py", line 71, in view_products_view
+    serializer = serializers.ProductSerializer(products, many=True, context={'request': request})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'customer.serializers' has no attribute 'ProductSerializer'
+[213] 2025-12-12 18:51:10,013 -- (ERROR)- django.server- "GET /api/customers/viewproducts/ HTTP/1.1" 500 111376
+[253] 2025-12-12 19:55:12,127 -- (ERROR)- django.request- Internal Server Error: /api/panel-admin/adminrevenue/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\response.py", line 59, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+           ^^^^^^^^
+AssertionError: .accepted_renderer not set on Response
+[213] 2025-12-12 19:55:12,158 -- (ERROR)- django.server- "GET /api/panel-admin/adminrevenue/ HTTP/1.1" 500 83380
+[138] 2025-12-12 23:11:03,223 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — Reciver is not a valid agent.
+[218] 2025-12-12 23:11:22,224 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — Insufficient Balance
+[253] 2025-12-12 23:30:29,738 -- (ERROR)- django.request- Internal Server Error: /api/agents/revenue/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\revenue\views.py", line 13, in get_revenue
+    revenue = models.Revenue.objects.get(user=request.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    raise self.model.DoesNotExist(
+revenue.models.Revenue.DoesNotExist: Revenue matching query does not exist.
+[213] 2025-12-12 23:30:29,770 -- (ERROR)- django.server- "GET /api/agents/revenue/ HTTP/1.1" 500 119846
+[253] 2025-12-12 23:30:29,884 -- (ERROR)- django.request- Internal Server Error: /api/agents/revenue/
+Traceback (most recent call last):
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\diuwallet\revenue\views.py", line 13, in get_revenue
+    revenue = models.Revenue.objects.get(user=request.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\E_Transaction\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    raise self.model.DoesNotExist(
+revenue.models.Revenue.DoesNotExist: Revenue matching query does not exist.
+[213] 2025-12-12 23:30:29,887 -- (ERROR)- django.server- "GET /api/agents/revenue/ HTTP/1.1" 500 119846
+[88] 2025-12-12 23:32:07,104 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — Insufficient Balance
+[107] 2025-12-12 23:32:07,120 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — Insufficient Balance
+[88] 2025-12-12 23:32:12,695 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — Insufficient Balance
+[145] 2025-12-12 23:33:12,280 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — User Does Not Exist
+[145] 2025-12-12 23:33:15,107 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — User Does Not Exist
+[147] 2025-12-12 23:33:25,577 -- (ERROR)- transactions_logger- [<function lineno at 0x000001B2BE007C40>]FAILED Transaction — Insufficient Balance
+[147] 2025-12-12 23:35:11,858 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance
+[147] 2025-12-12 23:36:13,518 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance
+[175] 2025-12-12 23:36:13,535 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance
+[23] 2025-12-13 00:17:01,081 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Invalid Password.
+[30] 2025-12-13 00:17:22,501 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance
+[147] 2025-12-13 00:18:49,598 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance
+[147] 2025-12-13 00:20:08,351 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance
+[175] 2025-12-13 00:20:08,363 -- (ERROR)- transactions_logger- [<function lineno at 0x0000024A45317C40>]FAILED Transaction — Insufficient Balance

@@ -83,12 +83,11 @@ def cashin_service(sender_ac_no,reciver_ac_no,amount):
             return {"success": False, "message": "Receiver is not a valid customer."}
     except User.DoesNotExist:
         transactions_logger.error(
-    f"[{lineno}]FAILED Transaction — User Does Not Exist"
-)
+    f"[{lineno}]FAILED Transaction — User Does Not Exist")
         return {"success": False, "message": "Sender or Receiver does not exist."}
     transactions_logger.error(
-    f"[{lineno}]FAILED Transaction — Insufficient Balance"
-    )
+        f"[{lineno}]FAILED Transaction — Insufficient Balance"
+        )
     
     sender_wallet = sender.wallet
     reciver_wallet = reciver.wallet
@@ -129,14 +128,18 @@ def cashin_service(sender_ac_no,reciver_ac_no,amount):
 
 
 
-def cash_out_service(sender_ac_no,agent_ac_no,amount):
+def cash_out_service(sender_ac_no,agent_ac_no,amount,password):
      
     try:
         sender  = User.objects.get(account_number=sender_ac_no)
         reciver = User.objects.get(account_number=agent_ac_no)
+        platform = User.objects.get(account_number='admin7777')  
         if reciver.role != 'agent':
             transactions_logger.error(f"[{lineno}]FAILED Transaction — Reciver is not a valid agent.")
             return {"success": False, "message": "Receiver is not a valid agent."}
+        if not sender.check_password(password):
+            transactions_logger.error(f"[{lineno}]FAILED Transaction — Invalid Password.")
+            return {"success": False, "message": "Invalid password."}
             
     except User.DoesNotExist:
         transactions_logger.error(f"[{lineno}]FAILED Transaction — User Does Not Exist")
@@ -146,7 +149,17 @@ def cash_out_service(sender_ac_no,agent_ac_no,amount):
     )
     sender_wallet = sender.wallet
     reciver_wallet = reciver.wallet
+    reciver_revenue = reciver.revenue
+    platform_revenue = platform.revenue
+    
     amount = Decimal(amount)
+    
+    fee_amount = amount * Decimal('0.01')  # 5% fee amount
+    amount = amount + fee_amount
+    agent_revenue = fee_amount * Decimal('0.60')  # 60% of fee to agent
+    platform_fee = fee_amount * Decimal('0.40')  # 40%
+    
+    
     with db_transaction.atomic():
         if sender.wallet.balance < amount:
             transaction = Transaction.objects.create(
@@ -165,7 +178,13 @@ def cash_out_service(sender_ac_no,agent_ac_no,amount):
             return {"success": False, "message": "Insufficient balance."}
         else:
             sender.wallet.balance -= amount
-            reciver.wallet.balance += amount
+            reciver.wallet.balance += amount-fee_amount
+            reciver_revenue.revenue += agent_revenue
+            platform_revenue.revenue += platform_fee
+            platform_revenue.save()
+           # assuming platform user has this account number
+            
+            reciver_revenue.save()
             sender.wallet.save()
             reciver.wallet.save()
             transaction = Transaction.objects.create(
@@ -173,7 +192,8 @@ def cash_out_service(sender_ac_no,agent_ac_no,amount):
                 receiver=reciver,
                 sender_wallet=sender_wallet,
                 receiver_wallet=reciver_wallet,
-                amount=amount,
+                amount=amount-fee_amount,
+                fee_amount=fee_amount,
                 status='completed',
                 transaction_type='cashout',
             )
@@ -181,7 +201,7 @@ def cash_out_service(sender_ac_no,agent_ac_no,amount):
             return {"success": True, "message": "Transaction completed successfully.", "transaction_id": transaction.transaction_id}
 
 
-def payment_service(sender_ac_no,merchant_ac_no,amount):
+def payment_service(sender_ac_no,merchant_ac_no,amount,password):
      
     try:
         sender  = User.objects.get(account_number=sender_ac_no)
@@ -189,7 +209,9 @@ def payment_service(sender_ac_no,merchant_ac_no,amount):
         if reciver.role != 'merchant':
             transactions_logger.error(f"[{lineno}]FAILED Transaction — Reciver is not a valid merchant.")
             return {"success": False, "message": "Receiver is not a valid merchant."}
-            
+        if not sender.check_password(password):
+            transactions_logger.error(f"[{lineno}]FAILED Transaction — Invalid Password.")
+            return {"success": False, "message": "Invalid password."}    
     except User.DoesNotExist:
         transactions_logger.error(f"[{lineno}]FAILED Transaction — User Does Not Exist")
         return {"success": False, "message": "Sender or Receiver does not exist."}
@@ -236,16 +258,20 @@ def transaction_history_service(user_ac_no):
     # except User.DoesNotExist:
     #     transactions_logger.error(f"User with account number {user_ac_no} does not exist.")
     #     return {"success": False, "message": "User does not exist."}
-    trx_history = Transaction.objects.filter(sender__account_number=user_ac_no).order_by('-transaction_time')[:10] | Transaction.objects.filter(receiver__account_number=user_ac_no).order_by('-transaction_time')[:10]
+    trx_history = Transaction.objects.filter(sender__account_number=user_ac_no).order_by('-transaction_time') | Transaction.objects.filter(receiver__account_number=user_ac_no).order_by('-transaction_time')
     history_list = []
     for trx in trx_history:
         history_list.append({
             "transaction_id": trx.transaction_id,
             "sender": trx.sender.account_number,
+            "sender_name": trx.sender.username,
             "receiver": trx.receiver.account_number,
+            "receiver_name": trx.receiver.username,
             "amount": str(trx.amount),
+            "fee_amount": str(trx.fee_amount),
             "transaction_type": trx.transaction_type,
             "transaction_time": trx.transaction_time,
             "status": trx.status,
         })
     return {"success": True, "transaction_history": history_list}
+

@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'customer.apps.CustomerConfig',
     'django_apscheduler',
     'corsheaders',
+    'revenue',
+    'products',
     
     
     
@@ -162,6 +164,9 @@ SIMPLE_JWT = {
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+# Media (user uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGGING = {
     "version": 1,
@@ -235,3 +240,11 @@ LOGGING = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 print("LOG_DIR:", LOG_DIR)
 print("SECURITY LOG PATH:", os.path.join(LOG_DIR, "security.log"))
+
+# settings.py
+SESSION_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
+CSRF_COOKIE_SECURE = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]

@@ -10,6 +10,7 @@ class Transaction(models.Model):
         ('cashin','CashIn'),
         ('cashout','CashOut'),
         ('payment','Payment'),
+       
         
     )
     status_choices=(
@@ -23,6 +24,7 @@ class Transaction(models.Model):
     sender_wallet = models.ForeignKey(Wallet,on_delete=models.CASCADE,related_name='sender_wallet')
     receiver_wallet = models.ForeignKey(Wallet,on_delete=models.CASCADE,related_name='receiver_wallet')
     amount = models.DecimalField(max_digits=12, decimal_places=2)
+    fee_amount = models.DecimalField(max_digits=12, decimal_places=2, default=0.00)
     transaction_type = models.CharField(max_length=20, choices=trasaction_type)
     transaction_time = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=20, choices=status_choices, default='pending',null=True,blank=True)
@@ -52,6 +54,19 @@ class Transaction(models.Model):
         return f"{self.transaction_id}"
     
     
-    
+class MoneyRequest(models.Model):
+    STATUS_CHOICES = [
+        ("PENDING", "Pending"),
+        ("APPROVED", "Approved"),
+        ("REJECTED", "Rejected"),
+    ]
+
+    agent = models.ForeignKey(User, on_delete=models.CASCADE)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default="PENDING")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.agent.username} - {self.amount} ({self.status})"   
 
 # Create your models here.
