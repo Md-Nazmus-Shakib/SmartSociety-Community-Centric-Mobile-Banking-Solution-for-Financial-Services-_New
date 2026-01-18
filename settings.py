@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'agent',
     'merchant',
     'panel_admin',
-    'customer',
+    # 'customer',
     'transactions',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
