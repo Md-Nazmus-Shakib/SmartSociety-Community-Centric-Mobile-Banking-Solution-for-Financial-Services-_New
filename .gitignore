@@ -1,3 +1,4 @@
-settings
-diuwallet/settings
-env
+settings.py
+diuwallet/settings.py
+.env
+env/
