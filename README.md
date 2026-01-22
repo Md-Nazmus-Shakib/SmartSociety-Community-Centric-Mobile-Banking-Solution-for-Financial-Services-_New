@@ -43,7 +43,7 @@ SmartSociety is a full-featured mobile banking solution that enables seamless fi
 ## 🛠 Technology Stack
 
 - **Backend Framework**: Django
-- **Database**: SQLite (development) - can be configured for PostgreSQL/MySQL in production
+- **Database**: PostgreSQL
 - **Server**:  ASGI/WSGI support for deployment flexibility
 - **Python**:  Python 3.x
 
